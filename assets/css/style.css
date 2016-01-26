@@ -1,3 +1,63 @@
 body {
-  background-color: #F0F0F0;
+  margin: 0;
+  font-family: 'Open Sans', Arial, Helvetica, serif;
+  font-weight: 400;
+}
+
+.wrapper_lupercal {
+  width: 100%;
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+a {
+  background: transparent;
+}
+
+a:link, a:visited {
+
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  line-height: 1.313em;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.563em 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  margin: 0.625em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 1.313em 0;
+}
+
+h4 {
+  font-size: 1.313em;
+  margin: 1.313em 0;
+}
+
+h5 {
+  font-size: 1.125em;
+  margin: 1.313em 0;
+}
+
+h6 {
+  font-size: 1em;
+  margin: 0.75em 0;
 }
