@@ -1,0 +1,48 @@
+{{!< default}}
+{{> header}}
+<main class="main_lupercal" role="main">
+  {{#post}}
+    <article class="article_lupercal" role="article" itemscope itemtype="http://schema.org/Article">
+      <header class="postheader_lupercal">
+        <time class="date_lupercal" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
+        <h1 class="posttitle_lupercal" itemprop="headline">{{title}}</h1>
+      </header>
+      <div class="postcontent_lupercal" itemprop="articleBody">
+        {{content}}
+      </div>
+      {{#if tags}}
+        <div class="posttags_lupercal">
+          Tags: {{tags separator=" | "}}
+        </div>
+      {{/if}}
+      <div class="sharepost_lupercal">
+        <h4 class="share_lupercal">Share this post: &nbsp;</h4>
+        <a class="share_lupercal icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_lupercal">Twitter</span></a>
+        <a class="share_lupercal icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_lupercal">Facebook</span></a>
+        <a class="share_lupercal icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_lupercal">Google+</span></a>
+      </div>
+      {{#if author}}
+        <footer class="postfooter_lupercal">
+          <address itemscope itemtype="http://schema.org/Person">
+        {{#if author.image}}
+        <div class="authorimage_lupercal"><img src="{{author.image}}" itemprop="image" /></div>
+        {{/if}}
+        <h4 class="authorname_lupercal"><span itemprop="author">{{author.name}}</span></h4>
+        {{#if author.website}}
+        <div class="authorwebsite_lupercal"><a href="{{author.website}}" itemprop="url">{{author.website}}</a></div>
+        {{/if}}
+        </address>
+          <div class="authorbio_lupercal">
+            <p>{{author.bio}}</p>
+          </div>
+        </footer>
+      {{/if}}
+    </article>
+  {{/post}}
+  {{#if pagination}}
+    <div class="pagination_lupercal">
+      {{{pagination}}}
+    </div>
+  {{/if}}
+</main>
+{{> footer}}
