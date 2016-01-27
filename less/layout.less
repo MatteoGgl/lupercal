@@ -3,17 +3,108 @@ img {
   max-width: 100%;
 }
 
+hr {
+  .HRColor;
+  box-sizing: content-box;
+  height: 0;
+  display: block;
+  margin: @golden + 0em 0;
+  padding: 0;
+  font-size: @golden + 0em;
+}
+
 .wrapper_lupercal {
   width: 100%;
   max-width: @readable_width + 2 * @add_padding;
-  margin: 0 auto;
+  margin: 0.25em auto 0 auto;
+  padding-bottom: @add_padding / 2 + 0em;
 }
 
 .header_lupercal {
   .HeaderColor;
+  text-align: center;
+  padding-top: 1.5 * @golden + 0em;
+  padding-bottom: 3 * @golden + 0em;
+  margin-bottom: 0.25em;
 }
 
 .article_lupercal {
   .ArticleColor;
-  padding: @add_padding + 0em;;
+  padding: 0 @add_padding + 0em @add_padding + 0em @add_padding + 0em;
+  margin-bottom: 0.25em;
+}
+
+.posttags_lupercal {
+  margin-top: 2 * @golden + 0em;
+  text-transform: lowercase;
+  font-family: 'Inconsolata', monospace;
+}
+
+.sharepost_lupercal {
+  .SharePostColor;
+  margin: @golden + 0em 0 2 * @golden + 0em 0;
+  padding: @golden + 0em;
+}
+
+h4.share_lupercal {
+  margin: 0 0.5em 0 0;
+}
+
+.share_lupercal {
+    float: left;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.authorimage_lupercal {
+    .AuthorImageColor;
+    float: left;
+    line-height: 0;
+    margin-right: @golden + 0em;
+    padding: 0.25em;
+    img {
+        border-radius: 50%;
+    }
+}
+
+h4.authorname_lupercal {
+    margin:0;
+}
+
+.postfooter_lupercal {
+    position: relative;
+}
+
+/* CLEAR - for modern awesome browsers */
+.sharepost_lupercal:before,
+.sharepost_lupercal:after,
+.postfooter_lupercal:before,
+.postfooter_lupercal:after {
+    content: "";
+    display: table;
+}
+.sharepost_lupercal:after,
+.postfooter_lupercal:after {
+  clear: both;
+}
+/* CLEAR - for IE 6/7 (trigger hasLayout) */
+.ie .sharepost_lupercal,
+.ie .postfooter_lupercal {
+    zoom: 1;
+}
+
+.postcontent_lupercal {
+  padding-top: 0.5em;
+}
+
+.pagination_lupercal {
+  .PaginationColor;
+  text-align: center;
+  padding: @golden / 2 + 0em @golden + 0em;
+}
+
+.footer_lupercal {
+  .FooterColor;
+  margin: @add_padding / 4 + 0em 0;
 }

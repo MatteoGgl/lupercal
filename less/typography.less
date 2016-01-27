@@ -19,6 +19,7 @@ body {
   font-family: @default_font;
   line-height: @golden + 0em;
   font-weight: 400;
+  word-wrap: break-word;
 }
 
 a {
@@ -46,10 +47,15 @@ h1 {
 
 h1.posttitle_lupercal {
   .PostTitleColor;
+  text-transform: uppercase;
 }
 
 h1.blogtitle_lupercal, h1.blogtitle_lupercal a {
+  font-size: 4.5rem;
+  margin: 0;
+  font-weight: 700;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -82,6 +88,27 @@ h6 {
   margin: 0.75em 0;
 }
 
+blockquote {
+  .BlockquoteColor;
+  margin: 1.563rem 0;
+  padding: 1.250rem;
+  font-style: italic;
+  font-size: 1.2em;
+}
+
+pre {
+  .CodeblockColor;
+  margin: 1.563rem 0;
+  padding: 1.250rem;
+  font-family: 'Inconsolata', monospace;
+}
+
 p.blogdescription_lupercal, p.blogdescription_lupercal a {
+  font-size: 1.313rem;
+  margin: 0;
   text-decoration: none;
+}
+
+.footer_lupercal {
+  text-transform: lowercase;
 }

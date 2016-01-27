@@ -36,3 +36,52 @@
     color: @deep_red;
   }
 }
+
+.SharePostColor () {
+  color: @deep_blue;
+    a, a:link, a:visited {
+        color: @light_red;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: @deep_red;
+    }
+}
+
+.AuthorImageColor () {
+
+}
+
+.PaginationColor () {
+  background: @grey;
+  color: @deep_blue;
+}
+
+.FooterColor () {
+  background-color: @deep_blue;
+  color: @grey;
+  a, a:link, a:visited {
+    color: @light_red;
+    text-decoration: none;
+  }
+  a:hover, a:focus {
+    color: lighten(@light_red, 10%);
+  }
+}
+
+.HRColor () {
+  border: 0;
+  border-top: 0.063em solid @light_grey;
+}
+
+.BlockquoteColor () {
+  background-color: @light_grey;
+  color: @grey;
+  border: .063rem solid darken(@grey, 10%);
+}
+
+.CodeblockColor () {
+  background-color: @deep_blue;
+  color: @light_red;
+}
