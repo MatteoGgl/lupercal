@@ -10,7 +10,9 @@
     <meta name="description" content="{{meta_description}}" />
     {{! Styles }}
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="/assets/css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{{asset "/css/normalize.min.css"}}">
+    <link rel="stylesheet" type="text/css" href="{{asset "/css/prism.css"}}" />
+
 
     {{! Fonts}}
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -31,5 +33,6 @@
   </div>
 
   {{ghost_foot}}
+  <script src="{{asset "/js/prism.js"}}"></script>
 </body>
 </html>

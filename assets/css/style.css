@@ -229,13 +229,6 @@ blockquote {
   font-style: italic;
   font-size: 1.2em;
 }
-pre {
-  background-color: #2A2E3E;
-  color: #EE283D;
-  margin: 1.563rem 0;
-  padding: 1.250rem;
-  font-family: 'Inconsolata', monospace;
-}
 p.blogdescription_lupercal,
 p.blogdescription_lupercal a {
   font-size: 1.313rem;
