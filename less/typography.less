@@ -1,0 +1,87 @@
+//**
+//  Mixins
+//**
+
+.HeaderFont () {
+  .HeaderColor;
+  font-family: @header_font;
+  line-height: 1.313em;
+  font-weight: @header_weight;
+}
+
+//**
+//  Styles
+//**
+
+body {
+  .BodyColor;
+  margin: 0;
+  font-family: @default_font;
+  line-height: @golden + 0em;
+  font-weight: 400;
+}
+
+a {
+  background: transparent;
+}
+
+a:link, a:visited {
+  .LinkColor;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  .LinkHoverColor;
+  outline: 0;
+}
+
+h1 {
+  .HeaderFont;
+  font-size: 3em;
+  margin: 0.563em 0;
+}
+
+h1.posttitle_lupercal {
+  .PostTitleColor;
+}
+
+h1.blogtitle_lupercal, h1.blogtitle_lupercal a {
+  text-decoration: none;
+}
+
+h2 {
+  .HeaderFont;
+  font-size: 2.25em;
+  margin: 0.625em 0;
+}
+
+h3 {
+  .HeaderFont;
+  font-size: 1.5em;
+  margin: 1.313em 0;
+}
+
+h4 {
+  .HeaderFont;
+  font-size: 1.313em;
+  margin: 1.313em 0;
+}
+
+h5 {
+  .HeaderFont;
+  font-size: 1.125em;
+  margin: 1.313em 0;
+}
+
+h6 {
+  .HeaderFont;
+  font-size: 1em;
+  margin: 0.75em 0;
+}
+
+p.blogdescription_lupercal, p.blogdescription_lupercal a {
+  text-decoration: none;
+}
