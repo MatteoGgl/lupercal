@@ -63,6 +63,11 @@ hr {
 h4.share_lupercal {
   margin: 0 0.5em 0 0;
 }
+.postheader_lupercal h6 {
+  padding: 0;
+  margin-top: -2.4em;
+  margin-left: .2em;
+}
 .share_lupercal {
   float: left;
   font-size: 1.1em;
@@ -111,8 +116,8 @@ h4.authorname_lupercal {
   padding: 0.809em 1.618em;
 }
 .footer_lupercal {
-  background-color: #2A2E3E;
-  color: #F2F2F2;
+  color: #444444;
+  width: 100%;
   margin: 2.0225em 0;
 }
 .footer_lupercal a,
@@ -123,7 +128,7 @@ h4.authorname_lupercal {
 }
 .footer_lupercal a:hover,
 .footer_lupercal a:focus {
-  color: #f25768;
+  color: #DB0024;
 }
 body {
   background-color: #F2F2F2;

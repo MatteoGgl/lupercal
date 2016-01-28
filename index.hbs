@@ -4,11 +4,11 @@
   {{#foreach posts}}
     <article class="article_lupercal" role="article" itemscope itemtype="http://schema.org/Article">
       <header class="postheader_lupercal">
-        <time class="date_lupercal" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
         <h1 class="posttitle_lupercal" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+        <h6><time class="date_lupercal" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">on {{date format='dddd DD MMM YYYY'}}</time> by <span class="author">{{author}}</span></h6>
       </header>
       <div class="postcontent_lupercal" itemprop="articleBody">
-        {{content}}
+        {{content words="42"}}<a class="read-more" href="{{url}}">Continue reading...</a>
       </div>
       {{#if tags}}
         <div class="posttags_lupercal">
