@@ -2,7 +2,7 @@
 {{> header}}
 <main class="main_lupercal" role="main">
   {{#post}}
-    <article class="article_lupercal" role="article" itemscope itemtype="http://schema.org/Article">
+    <article class="article_lupercal {{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
       <header class="postheader_lupercal">
         <time class="date_lupercal" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">{{date format='dddd DD MMM YYYY'}}</time>
         <h1 class="posttitle_lupercal" itemprop="headline">{{title}}</h1>
