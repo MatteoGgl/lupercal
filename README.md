@@ -1,6 +1,6 @@
 # Lupercal
----
-A Ghost theme written for programmers and not heretics/mutants/aliens.
+
+> A Ghost theme written for programmers and not heretics/mutants/aliens.
 
 ### What?
 
