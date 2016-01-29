@@ -1,4 +1,6 @@
 {
   "name": "lupercal",
-  "version": "0.1"
+  "version": "0.2",
+  "author": "Matteo Guglielmetti",
+  "description": "A Ghost theme written for programmers and not heretics/mutants/aliens."
 }

@@ -7,12 +7,12 @@
 **Lupercal** is a theme for the blogging platform [Ghost](http://github.com/tryghost/ghost/) written using LESS.
 It includes [FontAwesome](http://fortawesome.github.io/Font-Awesome/) for icons and [Prism](http://prismjs.com/) for syntax highlighting.
 
-It was developed on version 0.7.5.
+It was developed on version 0.7.5 and is not yet ready for production.
 
 ### How?
 
 #### Installation
-```
+```bash
 $ cd /directory-you-like-the-most
 $ git clone https://github.com/MatteoGgl/lupercal.git
 ```
@@ -52,6 +52,18 @@ Lupercal is written by me, @MatteoGgl, in my free time.
 ### Why?
 
 I wanted to write my own theme + learn LESS + populate my GitHub profile + contribute with something myself.
+
+### Todo
+
+* Integrate Modernizr
+* Disqus integration
+* Styling:
+  * Author page
+  * Navigation
+  * Tags
+  * Static pages
+* Better social integration
+* Finish TODO list
 
 ## Copyright & License
 
