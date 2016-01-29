@@ -45,6 +45,13 @@ When you want to use syntax highlighting in a post, you must specify the languag
   ```language-xxx
 ```
 
+#### Disqus integration
+Head to the file ```partials/comments.hbs``` and on this line:
+```javascript
+var disqus_shortname = 'example';
+```
+substitute ```'example'``` with your Disqus shortname. If you don't have one, [create a Disqus account](https://disqus.com/profile/signup/).
+
 ### Who?
 
 Lupercal is written by me, @MatteoGgl, in my free time.
