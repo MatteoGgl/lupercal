@@ -1,4 +1,4 @@
-<div role='banner' class="header_lupercal">
+<div role='banner' class="header_lupercal" {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
   {{#if @blog.logo}}
     <a class="logo_lupercal" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
   {{/if}}

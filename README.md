@@ -50,7 +50,7 @@ Head to the file ```partials/comments.hbs``` and on this line:
 ```javascript
 var disqus_shortname = 'example';
 ```
-substitute ```'example'``` with your Disqus shortname. If you don't have one, [create a Disqus account](https://disqus.com/profile/signup/).
+substitute ```example``` with your Disqus shortname. If you don't have one, [create a Disqus account](https://disqus.com/profile/signup/).
 
 ### Who?
 
@@ -69,12 +69,13 @@ I wanted to write my own theme + learn LESS + populate my GitHub profile + contr
   * Navigation
   * Tags
   * Static pages
+  * Disqus comments
 * Better social integration
 * Finish TODO list
 
 ## Copyright & License
 
-Copyright (c) 2016 Matteo Guglielmetti - Releades under MIT License.
+Copyright (c) 2016 Matteo Guglielmetti - Released under MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
